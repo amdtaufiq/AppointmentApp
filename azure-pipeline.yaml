@@ -1,0 +1,197 @@
+trigger:
+  branches:
+    include:
+      - dev
+      - release
+      - main
+
+variables:
+  buildConfiguration: 'Release'
+  patch: $[counter('patch', 1)]
+  buildNumber: $(appointmentApp.majorVersion).$(appointmentApp.minorVersion).$(patch)
+  imageName: '$(projectName)'
+  imageTag: '$(buildNumber)'
+  fullImageName: '$(imageName):$(imageTag)'
+  folderName: 'AppointmentApp.Api'
+  skeletonName: 'AppointmentApp'
+
+  devDeploy: $[ or(eq(variables['Build.SourceBranch'], 'refs/heads/dev'), eq(True, variables['appointmentApp.forceDeploy'])) ]
+  releaseDeploy: $[ eq(variables['Build.SourceBranch'], 'refs/heads/release') ]
+  masterDeploy: $[ and( ne(variables['PRODDockerRegistryServiceConnection'], ''), eq(variables['Build.SourceBranch'], 'refs/heads/main')) ]
+  forceDeploy: $[ eq(True, variables['appointmentApp.forceDeploy']) ]
+  deploy: $[ or(eq(True, variables['appointmentApp.forceDeploy']), eq(variables['Build.SourceBranch'], 'refs/heads/dev'), eq(variables['Build.SourceBranch'], 'refs/heads/release'), and(ne(variables['PRODDockerRegistryServiceConnection'], ''), eq(variables['Build.SourceBranch'], 'refs/heads/main'))) ]
+
+  ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/dev') }}:
+    EventLoggerEnvironment: "dev"
+  ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/release') }}:
+    EventLoggerEnvironment: "staging"
+  ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}:
+    appointmentApp.AzureStorage.MaxImageFileSizeInMb: 2
+    EventLoggerEnvironment: "production"
+  appsettingsfile: appsettings.json
+
+jobs:
+  - job: BuildAndTest
+    displayName: 'Build CI'
+      
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+    - script: printenv|sort
+
+    - script: echo '##vso[build.updatebuildnumber]$(buildNumber)'
+      displayName: 'Set build number'
+    - script: echo '##vso[build.addbuildtag]$(Build.SourceBranchName)'
+      displayName: 'Set build tag'
+    
+    - task: FileTransform@1
+      displayName: 'Transform appsettings.json file'
+      inputs:
+        folderPath: '$(Build.SourcesDirectory)'
+        fileType: json
+        targetFiles: '**/$(appsettingsfile)'
+
+    - task: UseDotNet@2
+      displayName: 'Use .NET 8.x'
+      inputs:
+        packageType: sdk
+        version: '8.x'
+        
+    - task: NuGetToolInstaller@0
+      displayName: 'Use NuGet 6.x'
+      inputs:
+        versionSpec: 6.x
+
+    - task: NuGetAuthenticate@1
+
+    - task: NuGetCommand@2
+      displayName: 'Nuget Restore Service'
+      inputs: 
+        command: restore
+        restoreSolution: '$(Build.SourcesDirectory)/$(skeletonName).sln'
+        feedsToUse: select
+        vstsFeed: appointmentapp
+        restoreDirectory: nugetpackage
+        includeNuGetOrg: true
+    - task: SonarCloudPrepare@3
+      displayName: "Prepare SonarCloud Analysis Configuration"
+      inputs:
+        SonarCloud: "sonarcloud-AppointmentApp"
+        organization: "appointmentapp"
+        scannerMode: "dotnet"
+        projectKey: "appointmentapp_services-dplan"
+        projectName: "AppointmentApp.Services.DPlan"
+
+    - script: dotnet build '$(Build.SourcesDirectory)/$(skeletonName).sln' -c $(buildConfiguration) --no-restore /p:Version='$(buildNumber)'
+      env:
+        MSBUILDSINGLELOADCONTEXT: 1
+      displayName: 'dotnet build'
+
+    - task: SonarCloudAnalyze@3
+      displayName: "Run SonarQube Analysis"
+
+    - task: SonarCloudPublish@3
+      displayName: "Publish SonarQube results"
+      inputs:
+        pollingTimeoutSec: "300"
+
+    - task: Docker@2
+      displayName: 'Login to DEV ACR'
+      inputs:
+        command: login
+        containerRegistry: $(DevDockerRegistryServiceConnection)
+      condition: and(succeeded(), eq(variables['devDeploy'], 'True'))
+
+    - task: Docker@2
+      displayName: 'Login to UAT ACR'
+      inputs:
+        command: login
+        containerRegistry: $(UATDockerRegistryServiceConnection)
+      condition: and(succeeded(), eq(variables['releaseDeploy'], 'True'))
+      
+    - task: Docker@2
+      displayName: 'Login to PROD ACR'
+      inputs:
+        command: login
+        containerRegistry: $(PRODDockerRegistryServiceConnection)
+      condition: and(succeeded(), eq(variables['masterDeploy'], 'True'))
+
+    - task: Docker@2
+      displayName: 'Build AppointmentApp'
+      inputs:
+        command: 'build'
+        repository: $(projectName)
+        dockerFile: '$(Build.SourcesDirectory)/DockerFile'
+        tags: | 
+            $(buildNumber)
+            $(Build.SourceBranchName)
+        arguments: |
+            --build-arg buildnum=$(buildNumber)
+            --build-arg nugetToken=$(nugetToken)
+      condition: and(succeeded(), eq(variables['deploy'], 'True'))
+
+    - task: Docker@2
+      displayName: 'Push AppointmentApp'
+      inputs:
+        command: 'Push'
+        repository: $(projectName)
+        dockerFile: '$(Build.SourcesDirectory)/DockerFile'
+        tags: | 
+          $(buildNumber)
+      condition: and(succeeded(), eq(variables['deploy'], 'True'))
+
+    - task: HelmInstaller@1
+      displayName: 'Install Helm 3'
+      inputs:
+        helmVersionToInstall: 3.17.0
+      condition: and(succeeded(), eq(variables['deploy'], 'True'))
+
+    - task: HelmDeploy@0
+      displayName: 'Helm Package AppointmentApp'
+      inputs:
+        command: package
+        chartPath: '$(Build.SourcesDirectory)/Charts/$(projectName)'
+        destination: $(Build.artifactStagingDirectory)
+        version: $(buildNumber)
+      condition: and(succeeded(), eq(variables['deploy'], 'True'))
+
+    - script: echo $(DEVHelmRepositoryHelmv3)
+      displayName: 'ACR Name'
+
+    - task: AzureCLI@1
+      displayName: 'Push AppointmentApp Helm package to DEV ACR'
+      inputs: 
+        azureSubscription: $(DEVResourceManagerServiceConnection)
+        scriptLocation: inlineScript
+        inlineScript: |
+          helm push $(Build.artifactStagingDirectory)/$(imageName)-$(buildNumber).tgz oci://$(DEVHelmRepository).azurecr.io/helm 
+      condition: and(succeeded(), eq(variables['devDeploy'], 'True'))
+
+    - task: AzureCLI@1
+      displayName: 'Push AppointmentApp Helm package to UAT ACR'
+      inputs: 
+        azureSubscription: $(UATResourceManagerServiceConnection)
+        scriptLocation: inlineScript
+        inlineScript: |
+          helm push $(Build.artifactStagingDirectory)/$(imageName)-$(buildNumber).tgz oci://$(UATHelmRepository).azurecr.io/helm 
+      condition: and(succeeded(), eq(variables['releaseDeploy'], 'True'))
+        
+    - task: AzureCLI@1
+      displayName: 'Push AppointmentApp Helm package to PRD ACR'
+      inputs: 
+        azureSubscription: $(PRODResourceManagerServiceConnection)
+        scriptLocation: inlineScript
+        inlineScript: |
+          helm push $(Build.artifactStagingDirectory)/$(imageName)-$(buildNumber).tgz oci://$(PRODHelmRepository).azurecr.io/helm 
+      condition: and(succeeded(), eq(variables['masterDeploy'], 'True'))
+
+    - task: AzureCLI@1
+      displayName: "Maintain Image DEV ACR"
+      inputs:
+        azureSubscription: $(DEVResourceManagerServiceConnection)
+        scriptLocation: inlineScript
+        inlineScript: |
+          az acr run --cmd "acr purge --filter '$(projectName):.*' --keep 15 --ago 0d --untagged" --registry $(DEVHelmRepository) /dev/null 
+          az acr run --cmd "acr purge --filter 'helm/$(projectName):.*' --keep 15 --ago 0d --untagged" --registry $(DEVHelmRepository) /dev/null
+      condition: and(succeeded(), eq(variables['devDeploy'], 'True'))

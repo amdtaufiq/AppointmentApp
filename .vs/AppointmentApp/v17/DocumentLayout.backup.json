@@ -1,0 +1,351 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AppointmentApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB0A7FD-7C82-419C-B78D-D2EA9C5A6FE9}|AppointmentApp.Api.Tests\\AppointmentApp.Api.Tests.csproj|d:\\appointmentapp\\appointmentapp.api.tests\\controllers\\appointmentscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB0A7FD-7C82-419C-B78D-D2EA9C5A6FE9}|AppointmentApp.Api.Tests\\AppointmentApp.Api.Tests.csproj|solutionrelative:appointmentapp.api.tests\\controllers\\appointmentscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1DF124-9D91-4EB0-A239-1A626D5DA6C3}|AppointmentApp.Api\\AppointmentApp.Api.csproj|d:\\appointmentapp\\appointmentapp.api\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E1DF124-9D91-4EB0-A239-1A626D5DA6C3}|AppointmentApp.Api\\AppointmentApp.Api.csproj|solutionrelative:appointmentapp.api\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EF2D5F-BEED-4756-8D24-C18609DE29E1}|AppointmentApp.Application.Tests\\AppointmentApp.Application.Tests.csproj|d:\\appointmentapp\\appointmentapp.application.tests\\helpers\\tokengeneratortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EF2D5F-BEED-4756-8D24-C18609DE29E1}|AppointmentApp.Application.Tests\\AppointmentApp.Application.Tests.csproj|solutionrelative:appointmentapp.application.tests\\helpers\\tokengeneratortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA22C8D-BB77-443A-A928-D9D6F4A6D943}|AppointmentApp.Application\\AppointmentApp.Application.csproj|d:\\appointmentapp\\appointmentapp.application\\helpers\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA22C8D-BB77-443A-A928-D9D6F4A6D943}|AppointmentApp.Application\\AppointmentApp.Application.csproj|solutionrelative:appointmentapp.application\\helpers\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EF2D5F-BEED-4756-8D24-C18609DE29E1}|AppointmentApp.Application.Tests\\AppointmentApp.Application.Tests.csproj|d:\\appointmentapp\\appointmentapp.application.tests\\handlers\\updateappointmenthandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EF2D5F-BEED-4756-8D24-C18609DE29E1}|AppointmentApp.Application.Tests\\AppointmentApp.Application.Tests.csproj|solutionrelative:appointmentapp.application.tests\\handlers\\updateappointmenthandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA22C8D-BB77-443A-A928-D9D6F4A6D943}|AppointmentApp.Application\\AppointmentApp.Application.csproj|d:\\appointmentapp\\appointmentapp.application\\handlers\\appointments\\updateappointmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA22C8D-BB77-443A-A928-D9D6F4A6D943}|AppointmentApp.Application\\AppointmentApp.Application.csproj|solutionrelative:appointmentapp.application\\handlers\\appointments\\updateappointmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EF2D5F-BEED-4756-8D24-C18609DE29E1}|AppointmentApp.Application.Tests\\AppointmentApp.Application.Tests.csproj|d:\\appointmentapp\\appointmentapp.application.tests\\handlers\\getoutstandingappointmentqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EF2D5F-BEED-4756-8D24-C18609DE29E1}|AppointmentApp.Application.Tests\\AppointmentApp.Application.Tests.csproj|solutionrelative:appointmentapp.application.tests\\handlers\\getoutstandingappointmentqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA22C8D-BB77-443A-A928-D9D6F4A6D943}|AppointmentApp.Application\\AppointmentApp.Application.csproj|d:\\appointmentapp\\appointmentapp.application\\handlers\\appointments\\getoutstandingappointmentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA22C8D-BB77-443A-A928-D9D6F4A6D943}|AppointmentApp.Application\\AppointmentApp.Application.csproj|solutionrelative:appointmentapp.application\\handlers\\appointments\\getoutstandingappointmentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EF2D5F-BEED-4756-8D24-C18609DE29E1}|AppointmentApp.Application.Tests\\AppointmentApp.Application.Tests.csproj|d:\\appointmentapp\\appointmentapp.application.tests\\handlers\\getallappointmentqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EF2D5F-BEED-4756-8D24-C18609DE29E1}|AppointmentApp.Application.Tests\\AppointmentApp.Application.Tests.csproj|solutionrelative:appointmentapp.application.tests\\handlers\\getallappointmentqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA22C8D-BB77-443A-A928-D9D6F4A6D943}|AppointmentApp.Application\\AppointmentApp.Application.csproj|d:\\appointmentapp\\appointmentapp.application\\handlers\\appointments\\getallappointmentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA22C8D-BB77-443A-A928-D9D6F4A6D943}|AppointmentApp.Application\\AppointmentApp.Application.csproj|solutionrelative:appointmentapp.application\\handlers\\appointments\\getallappointmentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EF2D5F-BEED-4756-8D24-C18609DE29E1}|AppointmentApp.Application.Tests\\AppointmentApp.Application.Tests.csproj|d:\\appointmentapp\\appointmentapp.application.tests\\handlers\\createappointmentcommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EF2D5F-BEED-4756-8D24-C18609DE29E1}|AppointmentApp.Application.Tests\\AppointmentApp.Application.Tests.csproj|solutionrelative:appointmentapp.application.tests\\handlers\\createappointmentcommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA22C8D-BB77-443A-A928-D9D6F4A6D943}|AppointmentApp.Application\\AppointmentApp.Application.csproj|d:\\appointmentapp\\appointmentapp.application\\handlers\\appointments\\createappointmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA22C8D-BB77-443A-A928-D9D6F4A6D943}|AppointmentApp.Application\\AppointmentApp.Application.csproj|solutionrelative:appointmentapp.application\\handlers\\appointments\\createappointmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0D4ADE-C016-4B2D-97D4-7DAC148AEFC9}|AppointmentApp.Infra.Data.Tests\\AppointmentApp.Infra.Data.Tests.csproj|d:\\appointmentapp\\appointmentapp.infra.data.tests\\repositories\\appointmentqueryrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0D4ADE-C016-4B2D-97D4-7DAC148AEFC9}|AppointmentApp.Infra.Data.Tests\\AppointmentApp.Infra.Data.Tests.csproj|solutionrelative:appointmentapp.infra.data.tests\\repositories\\appointmentqueryrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8AC16C6-42DE-4B9D-AC67-A6CC506F521D}|AppointmentApp.Infra.Data\\AppointmentApp.Infra.Data.csproj|d:\\appointmentapp\\appointmentapp.infra.data\\repositories\\queries\\appointmentqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8AC16C6-42DE-4B9D-AC67-A6CC506F521D}|AppointmentApp.Infra.Data\\AppointmentApp.Infra.Data.csproj|solutionrelative:appointmentapp.infra.data\\repositories\\queries\\appointmentqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8AC16C6-42DE-4B9D-AC67-A6CC506F521D}|AppointmentApp.Infra.Data\\AppointmentApp.Infra.Data.csproj|d:\\appointmentapp\\appointmentapp.infra.data\\interfaces\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8AC16C6-42DE-4B9D-AC67-A6CC506F521D}|AppointmentApp.Infra.Data\\AppointmentApp.Infra.Data.csproj|solutionrelative:appointmentapp.infra.data\\interfaces\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8AC16C6-42DE-4B9D-AC67-A6CC506F521D}|AppointmentApp.Infra.Data\\AppointmentApp.Infra.Data.csproj|d:\\appointmentapp\\appointmentapp.infra.data\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8AC16C6-42DE-4B9D-AC67-A6CC506F521D}|AppointmentApp.Infra.Data\\AppointmentApp.Infra.Data.csproj|solutionrelative:appointmentapp.infra.data\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0D4ADE-C016-4B2D-97D4-7DAC148AEFC9}|AppointmentApp.Infra.Data.Tests\\AppointmentApp.Infra.Data.Tests.csproj|d:\\appointmentapp\\appointmentapp.infra.data.tests\\repositories\\agencyqueryrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0D4ADE-C016-4B2D-97D4-7DAC148AEFC9}|AppointmentApp.Infra.Data.Tests\\AppointmentApp.Infra.Data.Tests.csproj|solutionrelative:appointmentapp.infra.data.tests\\repositories\\agencyqueryrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8AC16C6-42DE-4B9D-AC67-A6CC506F521D}|AppointmentApp.Infra.Data\\AppointmentApp.Infra.Data.csproj|d:\\appointmentapp\\appointmentapp.infra.data\\repositories\\queries\\agencyqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8AC16C6-42DE-4B9D-AC67-A6CC506F521D}|AppointmentApp.Infra.Data\\AppointmentApp.Infra.Data.csproj|solutionrelative:appointmentapp.infra.data\\repositories\\queries\\agencyqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0D4ADE-C016-4B2D-97D4-7DAC148AEFC9}|AppointmentApp.Infra.Data.Tests\\AppointmentApp.Infra.Data.Tests.csproj|d:\\appointmentapp\\appointmentapp.infra.data.tests\\repositories\\appointmentcommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0D4ADE-C016-4B2D-97D4-7DAC148AEFC9}|AppointmentApp.Infra.Data.Tests\\AppointmentApp.Infra.Data.Tests.csproj|solutionrelative:appointmentapp.infra.data.tests\\repositories\\appointmentcommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 257,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppointmentsControllerTests.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Api.Tests\\Controllers\\AppointmentsControllerTests.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Api.Tests\\Controllers\\AppointmentsControllerTests.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Api.Tests\\Controllers\\AppointmentsControllerTests.cs",
+              "RelativeToolTip": "AppointmentApp.Api.Tests\\Controllers\\AppointmentsControllerTests.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAWwCIAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:45:50.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Api\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Api\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Api\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "AppointmentApp.Api\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAmwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:42:29.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenGeneratorTests.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Application.Tests\\Helpers\\TokenGeneratorTests.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Application.Tests\\Helpers\\TokenGeneratorTests.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Application.Tests\\Helpers\\TokenGeneratorTests.cs",
+              "RelativeToolTip": "AppointmentApp.Application.Tests\\Helpers\\TokenGeneratorTests.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:39:50.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenGenerator.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Application\\Helpers\\TokenGenerator.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Application\\Helpers\\TokenGenerator.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Application\\Helpers\\TokenGenerator.cs",
+              "RelativeToolTip": "AppointmentApp.Application\\Helpers\\TokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:38:04.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateAppointmentHandlerTests.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Application.Tests\\Handlers\\UpdateAppointmentHandlerTests.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Application.Tests\\Handlers\\UpdateAppointmentHandlerTests.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Application.Tests\\Handlers\\UpdateAppointmentHandlerTests.cs",
+              "RelativeToolTip": "AppointmentApp.Application.Tests\\Handlers\\UpdateAppointmentHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:36:27.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateAppointmentHandler.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Application\\Handlers\\Appointments\\UpdateAppointmentHandler.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Application\\Handlers\\Appointments\\UpdateAppointmentHandler.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Application\\Handlers\\Appointments\\UpdateAppointmentHandler.cs",
+              "RelativeToolTip": "AppointmentApp.Application\\Handlers\\Appointments\\UpdateAppointmentHandler.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA0wCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:34:52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetOutstandingAppointmentQueryHandlerTests.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Application.Tests\\Handlers\\GetOutstandingAppointmentQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Application.Tests\\Handlers\\GetOutstandingAppointmentQueryHandlerTests.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Application.Tests\\Handlers\\GetOutstandingAppointmentQueryHandlerTests.cs",
+              "RelativeToolTip": "AppointmentApp.Application.Tests\\Handlers\\GetOutstandingAppointmentQueryHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:30:24.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetOutstandingAppointmentQueryHandler.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Application\\Handlers\\Appointments\\GetOutstandingAppointmentQueryHandler.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Application\\Handlers\\Appointments\\GetOutstandingAppointmentQueryHandler.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Application\\Handlers\\Appointments\\GetOutstandingAppointmentQueryHandler.cs",
+              "RelativeToolTip": "AppointmentApp.Application\\Handlers\\Appointments\\GetOutstandingAppointmentQueryHandler.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:28:29.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetAllAppointmentQueryHandlerTests.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Application.Tests\\Handlers\\GetAllAppointmentQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Application.Tests\\Handlers\\GetAllAppointmentQueryHandlerTests.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Application.Tests\\Handlers\\GetAllAppointmentQueryHandlerTests.cs",
+              "RelativeToolTip": "AppointmentApp.Application.Tests\\Handlers\\GetAllAppointmentQueryHandlerTests.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCcAAACdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:24:00.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetAllAppointmentQueryHandler.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Application\\Handlers\\Appointments\\GetAllAppointmentQueryHandler.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Application\\Handlers\\Appointments\\GetAllAppointmentQueryHandler.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Application\\Handlers\\Appointments\\GetAllAppointmentQueryHandler.cs",
+              "RelativeToolTip": "AppointmentApp.Application\\Handlers\\Appointments\\GetAllAppointmentQueryHandler.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:21:03.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateAppointmentCommandHandlerTests.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Application.Tests\\Handlers\\CreateAppointmentCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Application.Tests\\Handlers\\CreateAppointmentCommandHandlerTests.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Application.Tests\\Handlers\\CreateAppointmentCommandHandlerTests.cs",
+              "RelativeToolTip": "AppointmentApp.Application.Tests\\Handlers\\CreateAppointmentCommandHandlerTests.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:11:11.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateAppointmentCommandHandler.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Application\\Handlers\\Appointments\\CreateAppointmentCommandHandler.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Application\\Handlers\\Appointments\\CreateAppointmentCommandHandler.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Application\\Handlers\\Appointments\\CreateAppointmentCommandHandler.cs",
+              "RelativeToolTip": "AppointmentApp.Application\\Handlers\\Appointments\\CreateAppointmentCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T08:36:14.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppointmentQueryRepositoryTests.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Infra.Data.Tests\\Repositories\\AppointmentQueryRepositoryTests.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Infra.Data.Tests\\Repositories\\AppointmentQueryRepositoryTests.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Infra.Data.Tests\\Repositories\\AppointmentQueryRepositoryTests.cs",
+              "RelativeToolTip": "AppointmentApp.Infra.Data.Tests\\Repositories\\AppointmentQueryRepositoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T08:31:57.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Infra.Data\\Interfaces\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Infra.Data\\Interfaces\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Infra.Data\\Interfaces\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "AppointmentApp.Infra.Data\\Interfaces\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T08:30:28.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Infra.Data\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Infra.Data\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Infra.Data\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "AppointmentApp.Infra.Data\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T08:30:15.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppointmentQueryRepository.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Infra.Data\\Repositories\\Queries\\AppointmentQueryRepository.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Infra.Data\\Repositories\\Queries\\AppointmentQueryRepository.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Infra.Data\\Repositories\\Queries\\AppointmentQueryRepository.cs",
+              "RelativeToolTip": "AppointmentApp.Infra.Data\\Repositories\\Queries\\AppointmentQueryRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T08:29:37.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AgencyQueryRepositoryTests.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Infra.Data.Tests\\Repositories\\AgencyQueryRepositoryTests.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Infra.Data.Tests\\Repositories\\AgencyQueryRepositoryTests.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Infra.Data.Tests\\Repositories\\AgencyQueryRepositoryTests.cs",
+              "RelativeToolTip": "AppointmentApp.Infra.Data.Tests\\Repositories\\AgencyQueryRepositoryTests.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwE4AAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T08:20:54.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AgencyQueryRepository.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Infra.Data\\Repositories\\Queries\\AgencyQueryRepository.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Infra.Data\\Repositories\\Queries\\AgencyQueryRepository.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Infra.Data\\Repositories\\Queries\\AgencyQueryRepository.cs",
+              "RelativeToolTip": "AppointmentApp.Infra.Data\\Repositories\\Queries\\AgencyQueryRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvxcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T08:17:19.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppointmentCommandRepository.cs",
+              "DocumentMoniker": "D:\\AppointmentApp\\AppointmentApp.Infra.Data.Tests\\Repositories\\AppointmentCommandRepository.cs",
+              "RelativeDocumentMoniker": "AppointmentApp.Infra.Data.Tests\\Repositories\\AppointmentCommandRepository.cs",
+              "ToolTip": "D:\\AppointmentApp\\AppointmentApp.Infra.Data.Tests\\Repositories\\AppointmentCommandRepository.cs",
+              "RelativeToolTip": "AppointmentApp.Infra.Data.Tests\\Repositories\\AppointmentCommandRepository.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T08:15:58.378Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
